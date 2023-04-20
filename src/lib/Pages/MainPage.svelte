@@ -3,7 +3,7 @@
     import Icon from '@iconify/svelte';
 </script>
 
-<main class="hero">
+<body>
     <img src={index} alt="Matteo Scaringi" class="image" />
     <header class="herotext">
         <p class="font-light">Hello! I'm</p>
@@ -13,18 +13,23 @@
         <a href=""><Icon icon="simple-icons:github" color="black" /></a>
         <a href=""><Icon icon="simple-icons:twitter" color="black" /></a>
     </header>
-</main>
+</body>
 
 <style lang="scss">
     /*Imports*/
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;700&display=swap');
 
     /*General content properties*/
-    .hero{
+    body{
         /*set vertical position to be in the middle*/
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        height: 100vh;
+        margin: 0;
+
+        background-color: #D6FFDA;
         
         justify-content: center;
         text-align: center;
